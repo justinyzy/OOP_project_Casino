@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.PasswordField?>
+
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="TOP_CENTER" spacing="2" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.poker_game.rule" style="-fx-background-image: url('bg2.png'); -fx-background-size: cover;">
+    <VBox alignment="TOP_CENTER">
+        <Label text="遊戲規則" style="-fx-font-size: 36px; -fx-underline: true; -fx-font-weight: bold; -fx-text-fill: yellow;"/>
+        <padding><Insets right="33.0" left="40.0" top="50"/></padding>
+    </VBox>
+
+    <VBox>
+        <padding><Insets right="33.0" left="40.0" bottom="5" top="5"/></padding>
+        <Label text="        遊戲開始前玩家可自行決定下注的籌碼數量。牌庫中有1~13種點數的牌(撲克牌)，每種牌都有無限多張。電腦系統將隨機打亂牌序，玩家可選擇要不要抽取下一張牌。玩家在手中所有牌的點數之合超過16點之前，選擇收手，可拿回六成(四捨五入至整數)本金，並且沒有贏得額外的籌碼。點數越高，贏得的賭金將一步步翻倍，直到剛好停在21點時，可贏得最高的賭金。過程中玩家可以隨時選擇收手，拿到目前贏得的賭金。 以下是超過16點時，玩家可贏得的籌碼"
+                   wrapText="true" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: yellow; -fx-font-alignment: left"/>
+
+        <HBox alignment="CENTER">
+            <padding><Insets left="30.0"/></padding>
+            <Label text="16:100%   17:110%   18:130%      19:160%   20:200%   21:300%"
+                   wrapText="true" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: yellow; -fx-font-alignment: left"/>
+        </HBox>
+
+        <Label text="但一當點數總合超過21點，玩家即失去所有目前贏得的賭金及本金。 另外，玩家在開始遊玩後的任何時刻，可以選擇是否要雙倍下注，將最初的下注金額翻倍，決定要雙倍下注後，會拿到一張牌，但之後就不能再繼續抽額外的牌了(雙倍下注所抽的那一張，就是玩家的最後一張手牌)。若這張牌翻開後，點數之和沒有超過16，就按照玩家收手拿回六成本金計算。若介於16~21點，則按照對應獎勵贏得籌碼。若超過21點，則同理，玩家失去雙倍下注的所有籌碼。"
+               wrapText="true" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: yellow; -fx-font-alignment: left"/>
+    </VBox>
+
+
+
+    <VBox alignment="BOTTOM_RIGHT">
+        <Button text="回主選單" style="-fx-font-size: 16px; -fx-font-weight: bold;" onAction="#switchToFrame2"/>
+        <padding><Insets right="30" bottom="40"/></padding>
+    </VBox>
+</VBox>

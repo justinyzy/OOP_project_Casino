@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<VBox alignment="TOP_CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.poker_game.Frame11Controller" style="-fx-background-image: url('bg2.png'); -fx-background-size: cover;">
+
+    <VBox alignment="TOP_CENTER">
+        <padding><Insets right="33.0" left="40.0" top="45"/></padding>
+        <Label text="借款" style="-fx-font-size: 36px; -fx-underline: true; -fx-font-weight: bold; -fx-text-fill: yellow;"/>
+    </VBox>
+
+    <VBox alignment="TOP_CENTER">
+        <padding><Insets right="33.0" left="40.0" bottom="3"/></padding>
+        <Label text="輸入借款金額" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: yellow;"/>
+        <TextField fx:id="amountField" promptText="輸入借款金額" prefWidth="100" style="-fx-font-size: 20px; -fx-alignment: center;"/>
+    </VBox>
+
+    <VBox alignment="TOP_CENTER">
+        <padding><Insets right="33.0" left="40.0" bottom="3" top="3"/></padding>
+        <Button text="開始借款" style="-fx-font-size: 20px; -fx-font-weight: bold;" onAction="#handleRentMoneyStart"/>
+    </VBox>
+
+    <VBox alignment="TOP_CENTER">
+        <padding><Insets right="33.0" left="40.0" bottom="3" top="3"/></padding>
+        <Button text="結束借款" style="-fx-font-size: 20px; -fx-font-weight: bold;" onAction="#handleRentMoneyEnd"/>
+    </VBox>
+
+    <VBox alignment="TOP_CENTER">
+        <padding><Insets right="33.0" left="40.0" bottom="3" top="3"/></padding>
+        <TextArea fx:id="rentStatusField" promptText="借款訊息" editable="false" prefWidth="200" prefHeight="100" wrapText="true" style="-fx-font-size: 16px;"/>
+    </VBox>
+
+    <VBox alignment="TOP_CENTER">
+        <padding><Insets right="33.0" left="40.0" bottom="3" top="3"/></padding>
+        <Button text="還款" style="-fx-font-size: 20px; -fx-font-weight: bold;" onAction="#handleRepay"/>
+    </VBox>
+
+    <VBox alignment="BOTTOM_RIGHT">
+        <Button text="回主選單" style="-fx-font-size: 20px; -fx-font-weight: bold;" onAction="#switchToFrame2"/>
+        <padding><Insets right="30" bottom="50"/></padding>
+    </VBox>
+</VBox>

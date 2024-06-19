@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.poker_game.Frame1Controller" style="-fx-background-image: url('bg1.png'); -fx-background-size: cover;">
+
+    <VBox alignment="TOP_CENTER">
+        <padding><Insets right="35.0" left="40.0" top="13"/></padding>
+        <Label text="決勝21點" style="-fx-font-size: 40px; -fx-font-weight: bold; -fx-text-fill: yellow;"/>
+    </VBox>
+
+    <VBox alignment="CENTER">
+        <padding><Insets right="35.0" left="40.0" top="3"/></padding>
+        <Button text="註冊" style="-fx-font-size: 24px; -fx-font-weight: bold;" onAction="#switchToFrame4"/>
+    </VBox>
+
+    <VBox alignment="CENTER">
+        <padding><Insets right="35.0" left="40.0" top="5"/></padding>
+        <Button text="登入" style="-fx-font-size: 24px; -fx-font-weight: bold;" onAction="#switchToFrame3"/>
+    </VBox>
+
+</VBox>
